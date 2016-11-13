@@ -28,6 +28,8 @@ public class CustomerController {
 	@GetMapping("/list")
 	public String listCustomers(Model theModel) {
 		
+		// The Controller
+		
 		logger.info("listing customers");
 		
 		List<Customer> theCustomers = customerService.getCustomers();
